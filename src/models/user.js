@@ -27,7 +27,7 @@ export default {
             } = yield call(login, payload)
             if (code == 0) {
                 // 登录成功: 缓存用户信息
-                localStorage.setItem('userinfo', userinfo)
+                localStorage.setItem('userinfo', JSON.stringify(userinfo))
                 yield put({
                     type: 'init',
                     payload: userinfo

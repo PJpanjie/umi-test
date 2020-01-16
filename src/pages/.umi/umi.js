@@ -219,10 +219,10 @@ export default (__IS_BROWSER ? null : serverRender);
     if (isIE) return;
 
     // Umi UI Bubble
-    require('../../../../../../../.config/yarn/global/node_modules/umi-plugin-ui/lib/bubble').default(
+    require('../../../../../../.config/yarn/global/node_modules/umi-plugin-ui/lib/bubble').default(
       {
         port: 3000,
-        path: '/Users/panjie/work/gitHub/react/umi-test',
+        path: '/Users/panjie/work/gitHub/umi-test',
         currentProject: '',
         isBigfish: undefined,
       },
@@ -234,7 +234,7 @@ export default (__IS_BROWSER ? null : serverRender);
 
 (() => {
   // Runtime block add component
-  window.GUmiUIFlag = require('../../../../../../../.config/yarn/global/node_modules/umi-build-dev/lib/plugins/commands/block/sdk/flagBabelPlugin/GUmiUIFlag.js').default;
+  window.GUmiUIFlag = require('../../../../../../.config/yarn/global/node_modules/umi-build-dev/lib/plugins/commands/block/sdk/flagBabelPlugin/GUmiUIFlag.js').default;
 
   // Enable/Disable block add edit mode
   window.addEventListener(

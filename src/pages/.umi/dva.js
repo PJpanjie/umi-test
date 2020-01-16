@@ -20,8 +20,8 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'user', ...(require('/Users/panjie/work/gitHub/react/umi-test/src/models/user.js').default) });
-app.model({ namespace: 'goods', ...(require('/Users/panjie/work/gitHub/react/umi-test/src/pages/goods/models/goods.js').default) });
+  app.model({ namespace: 'user', ...(require('/Users/panjie/work/gitHub/umi-test/src/models/user.js').default) });
+app.model({ namespace: 'goods', ...(require('/Users/panjie/work/gitHub/umi-test/src/pages/goods/models/goods.js').default) });
   return app;
 }
 
